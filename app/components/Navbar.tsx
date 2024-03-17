@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import BurgerItem from './nav/burgerItem';
 
 const navItems = [
 	{
@@ -17,6 +18,20 @@ const navItems = [
 	},
 ];
 
+const burgerItems = [{
+	
+	isOpen:'rotate-[135deg] top-3',
+	isClosed:'top-0'
+},{
+	
+	isOpen:'translate-x-7 opacity-0',
+	isClosed:'top-3'
+},{
+	
+	isOpen:'rotate-45 top-3',
+	isClosed:'top-6'
+},]
+
 export default function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -25,21 +40,7 @@ export default function Navbar() {
 			<div
 				className='relative m-6 p-4 cursor-pointer'
 				onClick={() => setIsNavOpen(!isNavOpen)}>
-				<div
-					className={`absolute  left-0 h-1.5 w-10 rounded-xl bg-black duration-500 ${
-						isNavOpen ? ' rotate-[135deg] top-3' : 'top-0'
-					}`}
-				/>
-				<div
-					className={`absolute top-3 left-0 h-1.5 w-10 rounded-xl bg-black duration-500 ${
-						isNavOpen ? ' translate-x-7 opacity-0' : ''
-					}`}
-				/>
-				<div
-					className={`absolute top-3 left-0 h-1.5 w-10 rounded-xl bg-black duration-500 ${
-						isNavOpen ? 'rotate-45 ' : 'top-6'
-					}`}
-				/>
+				{burgerItems.map(item => <BurgerItem key={item.isClosed} {...item} isNavOpen={isNavOpen} />)}
 			</div>
 
 			<ul className='hidden'>
