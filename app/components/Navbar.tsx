@@ -24,7 +24,7 @@ const burgerItems = [{
 	isClosed:'top-0'
 },{
 	
-	isOpen:'translate-x-7 opacity-0',
+	isOpen:'-translate-x-7 opacity-0',
 	isClosed:'top-3'
 },{
 	
@@ -33,20 +33,20 @@ const burgerItems = [{
 },]
 
 export default function Navbar() {
-	const [isNavOpen, setIsNavOpen] = useState(false);
+	const [isNavOpen, setIsNavOpen] = useState(true);
 
 	return (
-		<nav className='fixed  top-0 bg-transparent'>
+		<nav className='fixed flex justify-end w-full top-0 bg-transparent'>
 			<div
-				className='relative m-6 p-4 cursor-pointer'
+				className='relative z-10 m-6 p-6 self-end cursor-pointer'
 				onClick={() => setIsNavOpen(!isNavOpen)}>
 				{burgerItems.map(item => <BurgerItem key={item.isClosed} {...item} isNavOpen={isNavOpen} />)}
 			</div>
 
-			<ul className='hidden'>
+			<ul className={`absolute  h-screen w-screen top-0 left-0 flex flex-col items-center justify-center  bg-pink-600 transition-all duration-700 ${isNavOpen? 'opacity-100': 'opacity-0 -translate-y-full'}`}>
 				{navItems.map((item) => (
-					<li key={item.text}>
-						<Link href={item.link}>{item.text}</Link>
+					<li key={item.text} className='text-2xl text-white my-2 text-center border-b-2  '>
+						<Link href={item.link} className='py-2 px-4 '>{item.text}</Link>
 					</li>
 				))}
 			</ul>
