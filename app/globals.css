@@ -9,3 +9,39 @@ html {
 body {
 	position: relative;
 }
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.wave-animation {
+	animation: 2500ms infinite wave;
+}
+
+.btn {
+	display: block;
+	padding: 0.7rem 1.4rem;
+	text-align: center;
+	color: #fcd34d;
+	font-weight: 600;
+	border: 2px solid #fcd34d;
+	background-color: transparent;
+	border-radius: 2rem;
+}
+
+@keyframes wave {
+	0% {
+		rotate: 0;
+	}
+	30% {
+		rotate: 25deg;
+	}
+	70% {
+		rotate: -25deg;
+	}
+
+	100% {
+		rotate: 0deg;
+	}
+}
