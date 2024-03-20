@@ -16,7 +16,7 @@ body {
 }
 
 .wave-animation {
-	animation: 2500ms infinite wave;
+	animation: 2s infinite wave;
 }
 
 .btn {

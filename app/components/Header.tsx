@@ -4,6 +4,16 @@ import React from 'react';
 import Navbar from './Navbar';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Link from 'next/link';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import SocialLink from './header/socialLink';
+
+const socialData = [
+	{
+		icon: faLinkedin,
+		link: 'https://www.linkedin.com/in/bogdan-%C5%BCygad%C5%82o-371962272/',
+	},
+	{ icon: faGithub, link: 'https://github.com/SoT03' },
+];
 
 export default function Header() {
 	const [text] = useTypewriter({
@@ -37,11 +47,18 @@ export default function Header() {
 					</p>
 				</div>
 				<div>
-					<Link href='' className='btn'>
-						Let's work togheter
+					<Link href='' className='btn mb-4'>
+						Let's work together
 					</Link>
 				</div>
-				<div></div>
+				<div className='text-center'>
+					<h2 className='mb-2'>You can also find me at:</h2>
+					<div className='flex justify-center gap-10'>
+						{socialData.map((item) => (
+							<SocialLink key={item.link} {...item} />
+						))}
+					</div>
+				</div>
 			</div>
 		</header>
 	);
