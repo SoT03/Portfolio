@@ -22,12 +22,11 @@ export default function Header() {
 	});
 
 	return (
-		<header className='relative bg-gradient-radial from-fuchsia-900 to-fuchsia-950 h-screen z-0 xl:w-1/2'>
-			<div className='relative text-white h-full  flex flex-col  justify-between  gap-6 z-0'>
-				<Navbar />
-				<div className='wrapper'>
+		<header className='sticky top-0 bg-gradient-radial from-fuchsia-900 to-fuchsia-950 h-screen  xl:w-1/2 xl:fixed'>
+			<div className='relative text-white h-full flex flex-col   gap-6 z-0 '>
+				<div className='wrapper h-5/6 flex items-center  lg:items-end'>
 					<div className='relative -z-10 px-10 md:px-16 '>
-						<p className='[text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] text-4xl font-semibold text-amber-300 mb-6 md:text-5xl md:w-3/4 md:mb-12 '>
+						<p className='[text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] text-4xl font-semibold text-amber-300 mb-6 md:text-5xl md:w-3/4 md:mb-12 xl:leading-tight'>
 							Hello, my name is Bogdan Żygadło{' '}
 							<span className='relative inline-block wave-animation -z-10'>
 								✋
@@ -49,7 +48,7 @@ export default function Header() {
 						</Link>
 					</div>
 				</div>
-				<div className='wrapper'>
+				<div className='wrapper h-1/6 lg:flex lg:items-end'>
 					<div className='text-center pb-6 md:pb-10'>
 						<h2 className='mb-2 xl:mb-3'>You can also find me at:</h2>
 						<div className='flex justify-center gap-10 xl:gap-12'>

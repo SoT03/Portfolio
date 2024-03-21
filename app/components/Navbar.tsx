@@ -34,9 +34,9 @@ export default function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	return (
-		<nav className='flex justify-end w-full   bg-transparent  lg:sticky lg:justify-center  '>
+		<nav className='fixed top-0 flex justify-end w-full   bg-transparent   xl:w-1/2 lg:justify-center  z-50'>
 			<div
-				className='relative flex flex-col z-30 gap-1.5 p-6 self-end cursor-pointer md:p-10 md:gap-2 lg:hidden'
+				className='relative flex flex-col z-30 gap-1.5 p-4 mt-2 mr-4 self-end cursor-pointer md:p-10 md:gap-2 lg:hidden '
 				onClick={() => setIsNavOpen(!isNavOpen)}>
 				{burgerItems.map((item) => (
 					<BurgerItem key={item.isOpen} {...item} isNavOpen={isNavOpen} />
