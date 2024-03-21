@@ -34,7 +34,7 @@ export default function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	return (
-		<nav className='sticky flex justify-end w-full top-0  bg-transparent'>
+		<nav className='flex justify-end w-full   bg-transparent'>
 			<div
 				className='relative flex flex-col z-30 gap-1.5 p-6 self-end cursor-pointer'
 				onClick={() => setIsNavOpen(!isNavOpen)}>
