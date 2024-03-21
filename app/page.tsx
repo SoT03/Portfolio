@@ -1,7 +1,12 @@
 import Hero from './Hero';
+import { Urbanist } from 'next/font/google';
+import AboutMe from './components/AboutMe';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+
 import Section from './components/section/Section';
+
+const inter = Urbanist({ subsets: ['latin'] });
 
 export default function Home() {
 	return (
@@ -9,8 +14,9 @@ export default function Home() {
 			<Navbar />
 			<Header />
 
-			<main className='xl:ml-[50%]'>
+			<main className={`${inter.className} xl:ml-[50%]`}>
 				<Hero />
+				<AboutMe />
 			</main>
 		</>
 	);

@@ -44,7 +44,7 @@ export default function Navbar() {
 			</div>
 
 			<ul
-				className={`absolute  h-screen w-screen top-0 left-0 flex flex-col items-center justify-center  bg-black transition-all duration-700 z-20  lg:opacity-100 lg:-translate-y-0 lg:relative lg:h-auto lg:flex-row    ${
+				className={`absolute  h-screen w-screen top-0 left-0 flex flex-col items-center justify-center  bg-black transition-all duration-700 z-20  lg:opacity-100 lg:-translate-y-0 lg:relative lg:h-auto lg:flex-row     ${
 					isNavOpen ? 'opacity-100' : 'opacity-0 -translate-y-full'
 				} `}>
 				{navItems.map((item) => (

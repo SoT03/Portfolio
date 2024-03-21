@@ -22,7 +22,7 @@ export default function Header() {
 	});
 
 	return (
-		<header className='sticky top-0 bg-gradient-radial from-fuchsia-900 to-fuchsia-950 h-screen  xl:w-1/2 xl:fixed'>
+		<header className='sticky top-0 bg-gradient-radial from-[#83468a] to-[#a359ab] bg- h-screen  xl:w-1/2 xl:fixed'>
 			<div className='relative text-white h-full flex flex-col   gap-6 z-0 '>
 				<div className='wrapper h-5/6 flex items-center  lg:items-end'>
 					<div className='relative -z-10 px-10 md:px-16 '>
