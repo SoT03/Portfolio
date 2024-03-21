@@ -11,7 +11,7 @@ type SocialLinkProps = {
 export default function SocialLink({ link, icon }: SocialLinkProps) {
 	return (
 		<Link target='_blank' className='' href={link}>
-			<FontAwesomeIcon icon={icon} className='text-3xl' />
+			<FontAwesomeIcon icon={icon} className='text-3xl md:text-4xl' />
 		</Link>
 	);
 }

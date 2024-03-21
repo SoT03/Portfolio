@@ -36,7 +36,7 @@ export default function Navbar() {
 	return (
 		<nav className='flex justify-end w-full   bg-transparent'>
 			<div
-				className='relative flex flex-col z-30 gap-1.5 p-6 self-end cursor-pointer'
+				className='relative flex flex-col z-30 gap-1.5 p-6 self-end cursor-pointer md:p-10 md:gap-2'
 				onClick={() => setIsNavOpen(!isNavOpen)}>
 				{burgerItems.map((item) => (
 					<BurgerItem key={item.isOpen} {...item} isNavOpen={isNavOpen} />
