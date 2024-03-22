@@ -9,8 +9,8 @@ const navItems = [
 		link: '#aboutme',
 	},
 	{
-		text: 'Education',
-		link: '#education',
+		text: 'Skills',
+		link: '#skills',
 	},
 	{
 		text: 'Projects',
