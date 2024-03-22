@@ -5,12 +5,12 @@ import BurgerItem from './nav/burgerItem';
 
 const navItems = [
 	{
-		text: 'About Me',
-		link: '#aboutme',
+		text: 'Home',
+		link: '#home',
 	},
 	{
-		text: 'Skills',
-		link: '#skills',
+		text: 'About Me',
+		link: '#aboutme',
 	},
 	{
 		text: 'Projects',

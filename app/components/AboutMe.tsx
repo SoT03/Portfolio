@@ -10,8 +10,10 @@ const techStack = [
 	'sass',
 	'tailwind',
 	'js',
+	'gulp',
 	'react',
 	'nextjs',
+
 	'mongodb',
 ];
 
@@ -41,9 +43,11 @@ export default function AboutMe() {
 				<div>
 					<SectionTitle text='Skills' />
 					<SectionSubTitle text='My technical side' />
-					<div className='mt-4'>
-						<h3 className='font-semibold text-center text-xl'>My Tech Stack</h3>
-						<div className=' flex'>
+					<div className='mt-4 md:flex md:items-center md:justify-center  md:mt-6 md:gap-12'>
+						<h3 className='font-semibold text-center text-xl mb-4 md:border-r-2 md:border-black md:p-8'>
+							My Tech Stack
+						</h3>
+						<div className=' flex flex-wrap items-center justify-center gap-4 max-w-[400px] '>
 							{techStack.map((item) => (
 								<Image
 									loading='lazy'
@@ -52,6 +56,7 @@ export default function AboutMe() {
 									src={`https://skillicons.dev/icons?i=${item}`}
 									alt={`${item} icon`}
 									key={item}
+									className='hover:-translate-y-2 transition-transform duration-300'
 								/>
 							))}
 						</div>
