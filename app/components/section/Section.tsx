@@ -17,7 +17,7 @@ export default function Section({
 		<section
 			style={{ backgroundImage: `url(${bgImg})` }}
 			id={id}
-			className={`sticky min-h-screen top-0 z-10  px-8 py-16 md:px-20 lg:py-20 xl:px-0 xl:py-24 ${classes}`}>
+			className={`sticky min-h-screen top-0 z-10  px-8 py-16 md:px-20 lg:py-20  xl:py-24 ${classes}`}>
 			{children}
 		</section>
 	);

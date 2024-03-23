@@ -20,11 +20,11 @@ const techStack = [
 export default function AboutMe() {
 	return (
 		<Section id='aboutMe' classes='bg-white'>
-			<div className='wrapper xl:pr-20'>
+			<div className='wrapper '>
 				<div className='mb-10'>
 					<SectionTitle text='About Me' />
 					<SectionSubTitle text='Shortcut of my life' />
-					<p className='mt-4 xl:text-lg'>
+					<p className='mt-4 lg:text-lg'>
 						Hello! I'm Bogdan Żygadło, a passionate Front-End Developer who
 						loves to develop his knowledge. My journey to this point has been
 						filled with exciting challenges and inspiring experiences. For the
@@ -43,7 +43,7 @@ export default function AboutMe() {
 				<div>
 					<SectionTitle text='Skills' />
 					<SectionSubTitle text='My technical side' />
-					<div className='mt-4 md:flex md:items-center md:justify-center  md:mt-6 md:gap-12'>
+					<div className='mt-4 mb-8 md:flex md:items-center md:justify-center  md:mt-6 md:gap-12 lg:mb-12'>
 						<h3 className='font-semibold text-center text-xl mb-4 md:border-r-2 md:border-black md:p-8'>
 							My Tech Stack
 						</h3>
@@ -51,8 +51,8 @@ export default function AboutMe() {
 							{techStack.map((item) => (
 								<Image
 									loading='lazy'
-									width={64}
-									height={64}
+									width={56}
+									height={56}
 									src={`https://skillicons.dev/icons?i=${item}`}
 									alt={`${item} icon`}
 									key={item}
@@ -61,6 +61,12 @@ export default function AboutMe() {
 							))}
 						</div>
 					</div>
+					<p className='lg:text-lg'>
+						I have knowledge in UI/UX design and RWD that prioritize
+						accessibility and engagement, SEO principles to optimalize
+						visibility and searchability for websites and applications and
+						skills in Git for collaborative coding
+					</p>
 				</div>
 			</div>
 		</Section>
