@@ -19,7 +19,7 @@ const techStack = [
 
 export default function AboutMe() {
 	return (
-		<Section id='aboutMe' classes='bg-white'>
+		<Section classes='relative bg-white h-full ' id='aboutme'>
 			<div className='wrapper '>
 				<div className='mb-10'>
 					<SectionTitle text='About Me' />
