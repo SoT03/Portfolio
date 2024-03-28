@@ -32,6 +32,7 @@ const burgerItems = [
 
 export default function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
+	
 
 	return (
 		<nav className='fixed top-0 flex justify-end w-full   bg-transparent   xl:w-1/2 lg:justify-center   z-50'>
@@ -49,6 +50,7 @@ export default function Navbar() {
 				} `}>
 				{navItems.map((item) => (
 					<li
+						onClick={() => setIsNavOpen(!isNavOpen)}
 						key={item.text}
 						className='text-2xl text-white my-2 text-center w-1/2 border-b-2 md:my-6 md:text-3xl md:pb-2 md:w-1/4 lg:border-none lg:pb-0 lg:text-lg  lg:my-4'>
 						<Link href={item.link} className='py-2 px-4 lg:relative link'>
