@@ -5,6 +5,8 @@ import SectionSubTitle from './components/section/SectionSubTitle';
 import ProjectCard from './components/Project/ProjectCard';
 import cryptoImg from './assets/CryptoCoin.jpg';
 import tqmImg from './assets/tqm.jpg';
+import gymbroImg from './assets/GymBro.jpg';
+import darwinImg from './assets/Darwin.jpg';
 
 const projectData = [
 	{
@@ -16,17 +18,35 @@ const projectData = [
 		repo: 'https://github.com/SoT03/CryptoCalc',
 		img: cryptoImg.src,
 	},
+	{
+		id: 2,
+		title: 'GymBro',
+		desc: 'GymBro marked my inaugural venture into utilizing Tailwind CSS. My objective was clear: crafting a sleek and minimalist webpage that exuded both simplicity and visual appeal.',
+		tech: 'nextjs,react,tailwind',
+		live: 'https://gymbro-silk.vercel.app/',
+		repo: 'https://github.com/SoT03/gymbro',
+		img: gymbroImg.src,
+	},
 ];
 
 const commercialProjects = [
 	{
 		id: 1,
 		title: 'TQM Partners',
-		desc: 'CryptoCoin represents my initial foray into web development, focusing on API integration—a fundamental skill in modern web development. Through this project, I gained hands-on experience in fetching and displaying real-time cryptocurrency data, refining my abilities in data manipulation and presentation.',
+		desc: 'The company TQM Partners is a firm providing training, implementation, and consultancy services in the scope of ISO, for which I have developed the website.',
 		tech: 'nextjs,react,tailwind',
 		live: 'TQMpartners.pl',
-		repo: 'https://github.com/SoT03/CryptoCalc',
+		repo: 'https://github.com/SoT03/tqm',
 		img: tqmImg.src,
+	},
+	{
+		id: 2,
+		title: 'Darwin FHU',
+		desc: 'Darwin FHU is a company providing services in the field of photovoltaic installations, heat pumps, air conditioning, and energy storage',
+		tech: 'nextjs,react,tailwind',
+		live: 'dar-win.pl/',
+		repo: 'https://github.com/SoT03/darwin',
+		img: darwinImg.src,
 	},
 ];
 
