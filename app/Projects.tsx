@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Section from './components/section/Section';
 import SectionTitle from './components/section/SectionTitle';
@@ -7,12 +8,16 @@ import cryptoImg from './assets/CryptoCoin.jpg';
 import tqmImg from './assets/tqm.jpg';
 import gymbroImg from './assets/GymBro.jpg';
 import darwinImg from './assets/Darwin.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import {Pagination } from 'swiper/modules';
 
 const projectData = [
 	{
 		id: 1,
 		title: 'CryptoCoin',
-		desc: 'CryptoCoin represents my initial foray into web development, focusing on API integration—a fundamental skill in modern web development. Through this project, I gained hands-on experience in fetching and displaying real-time cryptocurrency data, refining my abilities in data manipulation and presentation.',
+		desc: 'CryptoCoin represents my initial foray into web development, focusing on API integration—a fundamental skill in modern web development. Through this project, I gained hands-on experience in fetching and displaying real-time cryptocurrency data.',
 		tech: 'nextjs,react,sass',
 		live: 'https://crypto-calc-two.vercel.app/',
 		repo: 'https://github.com/SoT03/CryptoCalc',
@@ -52,29 +57,44 @@ const commercialProjects = [
 
 export default function Projects() {
 	return (
-		<Section id='projects' classes='relative bg-slate-200 '>
+		<Section id='projects' classes='relative bg-slate-200'>
 			<SectionTitle text='Projects' />
 			<SectionSubTitle text='My personal and commercial projects' />
 			<div className='wrapper '>
-				<div className='my-10'>
+				<div className='my-10 lg:my-6'>
 					<h3 className='text-gray-700 mb-6 text-2xl font-semibold'>
 						Personal Projects
 					</h3>
-					<div>
+					<Swiper
+						modules={[Pagination]}
+						spaceBetween={50}
+						slidesPerView={1}
+						scrollbar={{ draggable: true }}
+						pagination={{ type: 'bullets', clickable: true }}>
 						{projectData.map((project) => (
-							<ProjectCard key={project.id} {...project} />
+							<SwiperSlide key={project.id}>
+								<ProjectCard key={project.id} {...project} />
+							</SwiperSlide>
 						))}
-					</div>
+					</Swiper>
 				</div>
 				<div>
 					<h3 className='text-gray-700 mb-6 text-2xl font-semibold'>
 						Commercial Projects
 					</h3>
-					<div>
+					<Swiper
+						className='flex'
+						modules={[Pagination]}
+						spaceBetween={50}
+						slidesPerView={1}
+						scrollbar={{ draggable: true }}
+						pagination={{ type: 'bullets', clickable: true }}>
 						{commercialProjects.map((project) => (
-							<ProjectCard key={project.id} {...project} />
+							<SwiperSlide key={project.id}>
+								<ProjectCard key={project.id} {...project} />
+							</SwiperSlide>
 						))}
-					</div>
+					</Swiper>
 				</div>
 			</div>
 		</Section>
