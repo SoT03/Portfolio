@@ -1,7 +1,7 @@
 import React from 'react';
-import Section from './components/section/Section';
-import Image from 'next/image';
-import img from './assets/profile.jpg';
+import Section from './section/Section';
+
+import img from '../assets/profile.jpg';
 
 export default function Hero() {
 	return (

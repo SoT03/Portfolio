@@ -43,7 +43,9 @@ export default function Header() {
 							I specialize in crafting engaging user experiences with JavaScript
 							using React. Let's bring your ideas to life!
 						</p>
-						<Link href='' className='btn block md:inline-block md:text-xl '>
+						<Link
+							href='#contact'
+							className='btn bg-transparent text-yellow-300 border-yellow-300 border-2 block md:inline-block md:text-xl hover:bg-yellow-300 hover:text-black'>
 							Let's work together
 						</Link>
 					</div>

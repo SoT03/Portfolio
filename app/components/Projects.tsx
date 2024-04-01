@@ -1,17 +1,17 @@
 'use client';
 import React from 'react';
-import Section from './components/section/Section';
-import SectionTitle from './components/section/SectionTitle';
-import SectionSubTitle from './components/section/SectionSubTitle';
-import ProjectCard from './components/Project/ProjectCard';
-import cryptoImg from './assets/CryptoCoin.jpg';
-import tqmImg from './assets/tqm.jpg';
-import gymbroImg from './assets/GymBro.jpg';
-import darwinImg from './assets/Darwin.jpg';
+import Section from './section/Section';
+import SectionTitle from './section/SectionTitle';
+import SectionSubTitle from './section/SectionSubTitle';
+import ProjectCard from './Project/ProjectCard';
+import cryptoImg from '../assets/CryptoCoin.jpg';
+import tqmImg from '../assets/tqm.jpg';
+import gymbroImg from '../assets/GymBro.jpg';
+import darwinImg from '../assets/Darwin.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import {Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 const projectData = [
 	{

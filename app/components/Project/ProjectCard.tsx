@@ -50,7 +50,9 @@ export default function ProjectCard({
 							className=' hover:text-blue-500 transition-colors duration-300 '>
 							Live
 						</Link>
-						<Link href={repo} className='hover:color-yellow-600'>
+						<Link
+							href={repo}
+							className='hover:text-blue-500 transition-colors duration-300'>
 							Repository
 						</Link>
 					</div>
