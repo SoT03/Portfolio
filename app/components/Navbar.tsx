@@ -31,8 +31,7 @@ const burgerItems = [
 ];
 
 export default function Navbar() {
-	const [isNavOpen, setIsNavOpen] = useState(false);
-	
+	const [isNavOpen, setIsNavOpen] = useState(true);
 
 	return (
 		<nav className='fixed top-0 flex justify-end w-full   bg-transparent   xl:w-1/2 lg:justify-center   z-50'>
@@ -52,12 +51,22 @@ export default function Navbar() {
 					<li
 						onClick={() => setIsNavOpen(!isNavOpen)}
 						key={item.text}
-						className='text-2xl text-white my-2 text-center w-1/2 border-b-2 md:my-6 md:text-3xl md:pb-2 md:w-1/4 lg:border-none lg:pb-0 lg:text-lg  lg:my-4'>
+						className='text-2xl text-white  my-2 text-center w-1/2 border-b-2 md:my-6 md:text-3xl md:pb-2 md:w-1/4 lg:border-none lg:pb-0 lg:text-lg  lg:my-4'>
 						<Link href={item.link} className='py-2 px-4 lg:relative link'>
 							{item.text}
 						</Link>
 					</li>
 				))}
+				<li
+					onClick={() => setIsNavOpen(!isNavOpen)}
+					className='text-2xl py-3 px-4 mt-8 text-yellow-300 border-2 border-yellow-300 rounded-full text-center lg:my-2 lg:text-xl lg:py-2 lg:px-3 hover:bg-yellow-300 hover:text-slate-700 transition-colors duration-300'>
+					<Link
+						href='/files/CV.pdf'
+						target='_blank'
+						className='py-2 px-4  lg:relative '>
+						Download CV
+					</Link>
+				</li>
 			</ul>
 		</nav>
 	);
