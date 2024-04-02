@@ -33,7 +33,7 @@ export default function Header() {
 							</span>
 						</p>
 						<h1 className='inline-block  font-semibold text-xl'>
-							I'm{' '}
+							I&apos;m{' '}
 							<span className='bg-gradient-to-tr bg-clip-text text-transparent text-xl from-amber-200 to-amber-400 font-bold md:text-2xl'>
 								{text}
 							</span>
@@ -41,12 +41,12 @@ export default function Header() {
 						<Cursor />
 						<p className='mb-4 md:text-lg md:w-1/2 md:mb-10'>
 							I specialize in crafting engaging user experiences with JavaScript
-							using React. Let's bring your ideas to life!
+							using React. Let&apos;s bring your ideas to life!
 						</p>
 						<Link
 							href='#contact'
 							className='btn bg-transparent text-yellow-300 border-yellow-300 border-2 block md:inline-block md:text-xl hover:bg-yellow-300 hover:text-black'>
-							Let's work together
+							Let&apos;s work together
 						</Link>
 					</div>
 				</div>

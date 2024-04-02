@@ -23,10 +23,16 @@ export default function ProjectCard({
 	return (
 		<div className='flex flex-col shadow-md rounded-lg overflow-hidden bg-white'>
 			<div className=''>
-				<Image src={img} alt={`${title} website`} height={900} width={1600} />
+				<img
+					loading='lazy'
+					src={img}
+					alt={`${title} website`}
+					height={900}
+					width={1600}
+				/>
 			</div>
 
-			<div className='flex flex-col justify-between  py-4 px-6 h-[300px] md:px-12 lg:h-[260px]  xl:h-[220px]'>
+			<div className='flex flex-col justify-between  py-4 px-6 h-[300px] md:px-12 lg:h-[260px] '>
 				<div>
 					<h4 className='mb-2 font-bold text-xl md:text-2xl md:my-3'>
 						{title}
@@ -35,7 +41,7 @@ export default function ProjectCard({
 				</div>
 				<div className=' flex justify-between py-3 md:py-4 '>
 					<div className=''>
-						<Image
+						<img
 							loading='lazy'
 							width={32}
 							height={32}

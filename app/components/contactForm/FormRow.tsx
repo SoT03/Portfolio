@@ -42,11 +42,12 @@ const FormRow = ({
 			}}
 			onChange={checkHandler}
 			required={required}
+			
 			value={value}
 			id={labelId}
 			name={labelId}
 			type={type}
-			className={`peer h-12 px-4 w-full border-2 rounded-lg border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-800    
+			className={`peer shadow-lg h-12 px-4 w-full border-2 rounded-lg border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-800    
 			}`}
 			placeholder='john@doe.com'
 		/>
@@ -63,7 +64,7 @@ const FormRow = ({
 				}}
 				id={labelId}
 				name={labelId}
-				className={`peer h-28 px-4 py-1 w-full border-2  rounded-lg border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-800 lg:h-36  ${
+				className={`peer shadow-lg h-28 px-4 py-1 w-full border-2  rounded-lg border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-800 lg:h-36  ${
 					!isValid ? 'border-red-600' : ''
 				}`}
 				placeholder='john@doe.com'

@@ -25,10 +25,10 @@ export default function AboutMe() {
 					<SectionTitle text='About Me' />
 					<SectionSubTitle text='Shortcut of my life' />
 					<p className='mt-4 lg:text-lg'>
-						Hello! I'm Bogdan Żygadło, a passionate Front-End Developer who
+						Hello! I&apos;m Bogdan Żygadło, a passionate Front-End Developer who
 						loves to develop his knowledge. My journey to this point has been
 						filled with exciting challenges and inspiring experiences. For the
-						past 9 i was learning how to create websites from scratch by
+						past 9 months i was learning how to create websites from scratch by
 						watching courses and making my own projects to practice what i
 						learned.
 					</p>
@@ -49,7 +49,8 @@ export default function AboutMe() {
 						</h3>
 						<div className=' flex flex-wrap items-center justify-center gap-4 max-w-[400px] '>
 							{techStack.map((item) => (
-								<Image
+								<img
+									fetchPriority='low'
 									loading='lazy'
 									width={56}
 									height={56}
