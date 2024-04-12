@@ -10,6 +10,7 @@ const techStack = [
 	'sass',
 	'tailwind',
 	'js',
+	'ts',
 	'gulp',
 	'react',
 	'nextjs',
@@ -43,11 +44,11 @@ export default function AboutMe() {
 				<div>
 					<SectionTitle text='Skills' />
 					<SectionSubTitle text='My technical side' />
-					<div className='mt-4 mb-8 md:flex md:items-center md:justify-center  md:mt-6 md:gap-12 lg:mb-12'>
-						<h3 className='font-semibold text-center text-xl mb-4 md:border-r-2 md:border-black md:p-8'>
+					<div className='mt-4 mb-8 md:flex  md:items-center  md:justify-center  md:mt-6 md:gap-12 lg:mb-12  '>
+						<h3 className='font-semibold text-center text-xl mb-4 md:border-r-2 md:border-black md:p-8 '>
 							My Tech Stack
 						</h3>
-						<div className=' flex flex-wrap items-center justify-center gap-4 max-w-[400px] '>
+						<div className=' flex flex-wrap items-center justify-center gap-4 max-w-[400px]   md:rounded-2xl md:p-6 '>
 							{techStack.map((item) => (
 								<img
 									fetchPriority='low'
@@ -57,7 +58,7 @@ export default function AboutMe() {
 									src={`https://skillicons.dev/icons?i=${item}`}
 									alt={`${item} icon`}
 									key={item}
-									className='hover:-translate-y-2 transition-transform duration-300'
+									className='hover:-translate-y-2 transition-transform duration-300 shadow-sm'
 								/>
 							))}
 						</div>

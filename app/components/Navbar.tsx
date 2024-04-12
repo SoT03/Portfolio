@@ -31,7 +31,7 @@ const burgerItems = [
 ];
 
 export default function Navbar() {
-	const [isNavOpen, setIsNavOpen] = useState(true);
+	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	return (
 		<nav className='fixed top-0 flex justify-end w-full   bg-transparent   xl:w-1/2 lg:justify-center   z-50'>
