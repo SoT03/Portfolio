@@ -6,7 +6,7 @@ import SectionSubTitle from './section/SectionSubTitle';
 export default function Contact() {
 	return (
 		<footer
-			className='relative bg-neutral-300 min-h-screen top-0 z-10  px-8 py-16 md:px-20 lg:py-20 xl:ml-[50%]'
+			className='relative bg-white min-h-screen top-0 z-10  px-8 py-16 md:px-20 lg:py-20 xl:ml-[50%]'
 			id='contact'>
 			<div className='wrapper'>
 				<SectionTitle text='Contact me' />
